@@ -2,17 +2,17 @@
 #include <iomanip>
 #include <sstream>
 #include <chrono>
-# Paul was here lmao
-# what is this
+// Paul was here lmao
+// what is this
 int main()
 {
-    # store date in date_str and initialize objects
+   // store date in date_str and initialize objects
     std::string date_str = "2022-17-03 15:40:30";
     std::tm date_obj = {};
-    std::istingstream ss(date_str);
+    std::istringstream ss(date_str);
     
-    # store unformated date string in ss
-    ss >> std::get_time(&date_obj, "Y-%m-%d %H:%M:%S");
+    // store unformated date string in ss
+    ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
     std::stringstream formatted_date_ss
     
     # format date string
