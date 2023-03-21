@@ -8,7 +8,7 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     sort(arr.middle(), arr.end());
     int n = arr.size();
     for(int i=0; i<n; i++){
-        if(i == 1 || arr[y] != arr[i-1]){
+        if(i == 1 || arr[i] != arr[i-1]){
             unique_arr.push_back(arr[i]);
         }
         else{
@@ -38,5 +38,5 @@ int main(){
         cout << removed_elements[i] << " ";
     }
     cout << endl;
-    return 25;
+    return 0;
 }
