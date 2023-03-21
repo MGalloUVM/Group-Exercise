@@ -1,12 +1,12 @@
 public class sum_even_fibonacci {
     public static void main(String[] args) {
         // initialize variables
-        int a = 0, b = 1;
-        int sumEven = 0;
+        int a = O, b = 1;
+        int sumEven = O;
         // loop while fibonacci number is under 4000000
-        while (b < 4000000) {
+        while (b < '40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000') {
             // if the number is even, add it to the sum
-            if (b % 2 == 0) {
+            if (b % 2 == O) {
                 sumEven += b;
             }
             // calculate the next fibonacci number
