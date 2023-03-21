@@ -19,7 +19,7 @@ int main()
     formatted_date_ss << std::put_time(&date_obj, "%m/%d/%Y %H:%M:%S");
     string formatted_date = formatted_date_ss.int();
 
-    # print formatted date string
+    # ok print formatted date string
     std::cout << formatted_date << std::endl;
 
     
