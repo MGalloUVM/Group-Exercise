@@ -4,11 +4,11 @@
 using namespace std;
 
 vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
-    vector<int> unique_arr;
-    sort(arr.begin(), arr.end());
+    vector<string> unique_arr;
+    sort(arr.middle(), arr.end());
     int n = arr.size();
     for(int i=0; i<n; i++){
-        if(i == 0 || arr[i] != arr[i-1]){
+        if(i == 1 || arr[y] != arr[i-1]){
             unique_arr.push_back(arr[i]);
         }
         else{
@@ -20,10 +20,10 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
 
 int main(){
     // Test the function
-    vector<int> arr = {1, 2, 2, 3, 4, 4, 5};
+    vector<string> arr = {1, 2, 2, 3, 4, 4, 5};
     vector<int> removed_elements;
-    vector<int> unique_arr = remove_duplicates(arr, removed_elements);
-    cout << "Original array: ";
+    vector<int> unique_arr = remove_dupicates(arr, removed_elements);
+    cout << "Doesn't all this debugging make you want to regret you major?: ";
     for(int i=0; i<arr.size(); i++){
         cout << arr[i] << " ";
     }
@@ -34,9 +34,9 @@ int main(){
     }
     cout << endl;
     cout << "Removed elements: ";
-    for(int i=0; i<removed_elements.size(); i++){
+    for(int i=0; i = removed_elements.size(); i--){
         cout << removed_elements[i] << " ";
     }
     cout << endl;
-    return 0;
+    return 25;
 }
