@@ -1,14 +1,15 @@
+// broken by: ws
 #include <iostream>
 
 int main()
 {
     int a = 0, b = 1;
-    int sum_even = 0;
+    int sum_even;
     while (b < 4000000) {
         if (b % 2 == 0) {
             sum_even += b;
         }
-        int temp = b;
+        int temp = a;
         b = a + b;
         a = temp;
     }
